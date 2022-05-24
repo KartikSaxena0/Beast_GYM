@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="../css/Project.css">
+    <!-- <link rel="stylesheet" href="F:\PROJECTS\Project 1- HTML & CSS\css"> -->
+    <!-- <link rel="stylesheet" href="\PROJECTS\Project 1- HTML & CSS\css\Project.css"> -->
+
+<script>
+    function sub(){
+        alert("Submit Successfully");
+    }
+    
+        function email(){
+            alert("Thank you for subscribed.");
+        }
+
+        function save(){
+            alert("Saved successfully");
+        }
+
+        function checkemail()
+        {
+            var email=document.getElementById("txtemail").value;
+            var filter=/^([a-zA-Z0-9\_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-a-zA-Z0-9]{3,3})+\$/;
+            if (!filter.test(email.value))
+            {
+                alert("provide valid email ID");
+            }
+            else
+            {
+                alert(" appied successfully");
+            }
+        }
+</script>
+
+</head>
+
+<body>
+    <div>
+        <img src="../img/13.jpg" alt="Error" id="img">
+
+        <div id="menu">
+            <ul>
+                <!-- <li><a href="index.html">Home</a></li> -->
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="About.html">          About</a></li>
+                <li><a href="Gallery.html">        Gallery</a></li>
+                <li><a href="healthyfood.html">    Healthy Food</a></li>
+                <li><a href="Registration.html">   Registration</a></li>
+                <li><a href="Contactus.html">      Contact Us</a></li>
+                <!-- <li><a href="bmi.html">BMI Calculater</a></li> -->
+                <!-- <li><a href="bmi.html">BMI Calculater</a></li> -->
+            </ul>
+        </div>
+        <div id="plan">
+            <ul>
+
+                <!-- <li class="wplan"><a href="wop.html">Workout Plans</a></li> -->
+
+                <!-- <li class="wplan"><a href="dp.html">Diet Plans</a></li> -->
+
+                <!-- <li class="wplan"><a href="pt.html">Personal Training</a></li> -->
+            </ul>
+            <div id="content">
+                <div id="rcont">
+                    <div id="rheading">
+                        Registration Form
+                        <div id="rline">
+                        </div>
+                    </div>
+                    <div id="rfcont"> 
+                        <!-- <br>
+                        <br>
+                        <br>
+                        First Name <br><input type="text" placeholder="Enter Your First Name"> -->
+                        <!-- username: <input type="text" placeholder="Enter your first name"> -->
+                        <table border="1" align="center" id="rftable">
+                            <!-- <caption>Registration Form</caption> -->
+                            <!-- <form> -->
+                            <tr>
+                                <th>Enter Your First Name</th>
+                                <td>
+                                    <input type="text" name="" placeholder="Enter your First name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Enter Your Surname</th>
+                                <td><input type="text" name="" placeholder="Enter Your Surname"></td>
+                            </tr>
+                            <tr>
+                                <th>Enter Your Mid Name</th>
+                                <td><input type="text" name="" placeholder="Enter Your Mid Name"></td>
+                            </tr>
+                            <!-- <tr>
+                                <th>Re-enter your password</th>
+                                <td>
+                                    <input type="password" name="">
+                                </td>
+                            </tr> -->
+                            <tr>
+                                <th>Enter Your Email id</th>
+                                <td>
+                                    <input type="text"  id="txtemail" name="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Enter Your mobile no.</th>
+                                <td>
+                                    <input type="text" name="">
+                                </td>
+                            </tr>
+                            <!-- <tr>
+                                <th>Enter your address</th>
+                                <td>
+                                    <textarea rows="8" cols="30" placeholder="Enter your address"></textarea>
+                                </td>
+                            </tr> -->
+                            <tr>
+                                <th>Select Your Gender</th>
+                                <td>
+                                    Male<input type="radio" name="n">Female<input type="radio" name="n">
+                                </td>
+                            </tr>
+                            <!-- <tr>
+                                <th>Select your hobbies</th>
+                                <td>
+                                    Hobby 1<input type="checkbox" name=""> Hobby 2 <input type="checkbox" name="">
+                                </td>
+                            </tr> -->
+                            <tr>
+                                <th>Enter Your DOB</th>
+                                <td>
+                                    <input type="date" name="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Select Your Subscription</th>
+                                <td>
+                                    <select>
+                                        <option selected="selected" disabled="disabled">Select Your Subscription</option>
+                                        <option>1 Month</option>
+                                        <option>3 Month</option>
+                                        <option>1 Year</option>
+                    
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Upload Your Picture</th>
+                                <td>
+                                    <input type="file" name="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" id="regsave"><input type="Submit" value="submit"  onclick="javascript:checkemail()" onclick="save()" name="" value="Save My Data"> &nbsp;  <input type="submit" name="" value="Reset Data"> </td>
+                            </tr>
+                        </table>
+                        <div id="rftxtarea">
+                            <h2> <u> Comment</u></h2>
+                            <textarea name="Comment" id="txta" cols="50" rows="10" placeholder="Comments For Upgrades and Query..."></textarea>
+                  
+        <!-- ======================= onclick =============================================================                     -->
+
+                            <input type="Submit" value="Submit" onclick="sub()" id="txts">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="bottom">
+                <div id="firstbottom">
+                    <b>VISIT OUR GYM</b>
+                    <hr>
+                    <hr>
+                    <div id="fbimg">
+                        <img src="../img/28.jpg" alt="Error">
+                    </div>
+                    <div id="badd">
+
+                        44/1, near Raj Hospital, Block A,
+                        <br>
+                        Naya Bans Village, Sector 15, Noida
+                        <br>
+                        <br>
+
+                        827-933-8363
+                    </div>
+                </div>
+                <div id="newline">
+
+                </div>
+                <div id="secbottom">
+                    <b>SOCIAL &nbsp; MEDIA</b>
+                    <hr>
+                    <hr>
+                    <div id="seccontact">
+
+
+                        Email: saxenakartik@98.com
+                        <br>
+                        <br>
+                        
+
+                            <a href="http:\\www.facebook.com" class="social"target="_blank"><img
+                                src="https://img.icons8.com/fluency/48/000000/facebook-new.png" /></a>
+                                &nbsp;
+                                &nbsp;
+                                <a href="http:\\www.instagram.com"class="social"target="_blank"><img
+                                    src="https://img.icons8.com/color/48/000000/instagram-new--v1.png" /></a>
+                                    <br>
+                                    <br>
+                                    <a href="http:\\www.twitter.com"class="social"target="_blank"><img src="https://img.icons8.com/color/48/000000/twitter-circled--v5.png"/></a>
+                                    &nbsp;
+                                    &nbsp;
+                                    <a href="http:\\www.google.com" class="social"target="_blank"><img src="https://img.icons8.com/fluency/48/000000/google-plus.png"/></a>
+                            
+                    </div>
+                </div>
+                <div id="sbline">
+
+                </div>
+                <div id="thirdbottom">
+                    <b>JOIN &nbsp; NOW</b>
+                    <hr>
+                    <hr>
+                    <div id="update">
+
+                        <table >
+                            <th>Futrue updates</th>
+                            <tr>
+                                <td><input type="text"  placeholder="Enter your email here for updates" id="utable"></td>
+                            
+                                <td><input type="submit" value="Sign-in" onclick="email()" id="usubmit" ></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+                <div id="hrbottom">
+                
+                </div>
+            </div>
+            <div id="logo">
+                BeAsT
+                <img src="../img/1.png" alt="Error" id="img1">
+                Gym
+            </div>
+</body>
+
+</html>
